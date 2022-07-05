@@ -1,10 +1,6 @@
 use rand::{Rng, SeedableRng};
 use wasm_bindgen::prelude::*;
 
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 #[wasm_bindgen]
 pub struct RandomStateXoshiro256Plus {
     state: rand_xoshiro::Xoshiro256Plus,
