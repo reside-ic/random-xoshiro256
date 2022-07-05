@@ -14,7 +14,7 @@
         "webpack"
     ],
     "author": "Rich FitzJohn <rich.fitzjohn@gmail.com>",
-    "license": "MIT(MIT OR Apache-2.0)w",
+    "license": "MIT",
     "dependencies": {
         "random-xoshiro256": "../pkg"
     },
