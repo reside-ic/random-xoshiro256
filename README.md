@@ -30,6 +30,17 @@ This may take a long time the first time, and will require internet access as it
 
 This will produce a bunch of things, among them `pkg` which holds the js package with typescript definitions, wrapper javascript and the wasm itself.
 
+## Bring up the web testing
+
+Following from the setup in the [rustwasm book](https://rustwasm.github.io/docs/book) there's a small example project that uses this package in `www`; from within that directory run:
+
+```
+npm install
+npm run start
+```
+
+then navigate to https://localhost:8080
+
 ## Licence
 
 MIT © Imperial College of Science, Technology and Medicine
