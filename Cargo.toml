@@ -1,0 +1,24 @@
+[package]
+name = "random-xoshiro256"
+version = "0.1.0"
+authors = ["Rich FitzJohn <rich.fitzjohn@gmail.com>"]
+edition = "2018"
+description = "Xoshiro256 RNG in WASM"
+license = "MIT"
+repository = "https://github.com/reside-ic/random-xoshiro256"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.63"
+getrandom = { version = "*", features = ["js"] }
+rand = "0.8.0"
+rand_xoshiro = "0.6.0"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"
+
+[profile.release]
+lto = true
+opt-level = 3
